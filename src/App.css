@@ -1,38 +1,100 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.signin-container, .signup-container, .addcourse-container {
+  background: linear-gradient(100.75deg, rgba(183, 255, 157, 0.8) -28.48%, rgba(58, 196, 171, 0.3625) 41.78%, rgba(68, 66, 186, 0) 100%), #886AFF;;
+  width: 50%;
+  padding: 65px;
+  border-radius: 40px;
+  margin-top: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.signin-container h1, .signup-container h1, .addcourse-container h1{
+  color: #ffffff;
+}
+
+ul{
+  list-style: none;
+}
+
+.signin-upper-container ul, .signup-upper-container ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.active-user{
+  background-color: rgb(166, 249, 255);
+}
+
+.signin-upper-container li, .signup-upper-container li{
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.signin-form form, .signup-form form, .addcourse-form form{
+  display: flex;
+  flex-direction: column;
+}
+
+.signin-form input, button, input:hover, .signup-form input, button, .addcourse-form input, button, select{
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.signin-form button, .signup-form button, .addcourse-form button {
+  background: linear-gradient(95.08deg, rgba(255, 72, 248, 0.8) 1.98%, rgba(186, 64, 181, 0) 100.61%), #300FFF;
+  padding: 10px;
+  width: 200px;
+  color: rgb(173, 250, 255);
+  margin-top: 50px;
+  margin: auto;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.signin-container span, .signup-container span {
+  color: #100e85;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.course-container{
+  padding: 20px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.violet-box{
+  background-color: #9422ff;
+  color: #ffffff;
+}
+
+.all-course-container, .enrolled-courses{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.enroll-btn{
+  background-color: #50ff5c;
+}
+
+.green-box {
+  background-color: #22ff47;
+  color: #ffffff;
 }
